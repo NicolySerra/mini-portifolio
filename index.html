@@ -1,77 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="./src/css/reset.css">
-    <link rel="stylesheet" href="./src/css/estilos.css">
-    <link rel="stylesheet" href="./src/css/rolagem.css">
-
-    <title>Mini Portfólio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nicoly Serra · Desenvolvedora Front-End</title>
+  <meta name="description" content="Portfólio de Nicoly Serra (Nix): projetos, sobre mim e como falar comigo.">
+  <meta name="theme-color" content="#2a1f4d">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-    <main class="cartao">
-        <div class="minhas-informacoes">
-            <img src="./src/imagens/ft-de-perfil.webp" alt="foto de perfil" width="100px" height="100px" />
-            <h1 class="nome">Nicoly Serra da Silva</h1>
-            <h2 class="cargo">Cyber Security | Redes | Segurança da Informação</h2>
-        </div>
+  <a class="skip" href="#conteudo">Ir para o conteúdo</a>
 
-        <div class="conteudo">
-            <ul class="abas">
-                <li class="aba selecionado" id="sobre-mim">
-                    <img src="./src/imagens/sobre.gif" alt="ícone de sobre mim" />
-                </li>
-                <li class="aba" id="minhas-redes">
-                    <img src="./src/imagens/coracao.gif" alt="ícone de redes sociais" />
-                </li>
-            </ul>
+  <header class="topo">
+    <img class="foto" src="src/imagens/ft-de-perfil.webp" width="200" height="200"
+         alt="Retrato de Nicoly Serra">
+    <div>
+      <h1>Nicoly Serra da Silva</h1>
+      <p class="cargo">Desenvolvedora Front-End Júnior · pode me chamar de Nix</p>
+    </div>
+    <nav aria-label="Principal">
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#evolucao">Evolução</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
 
-            <div class="informacoes-abas">
-                <div class="informacao selecionado" id="informacao-sobre-mim">
-                    <h3 class="sub-titulo">Sobre</h3>
+  <main id="conteudo">
+    <section id="sobre" aria-labelledby="t-sobre">
+      <h2 id="t-sobre">Sobre</h2>
+      <p>Oi! Meu nome é Nicoly Serra, seja bem-vindo(a)!</p>
+      <p>Sou apaixonada por programação desde os 13 anos, quando meu professor de informática me mostrou um site feito por ele. Foi amor à primeira vista. Sempre sonhei em trabalhar com isso e hoje estou colocando esse sonho em prática, estudando HTML, CSS e JavaScript.</p>
+      <p>Gosto muito de gatos (mesmo sendo alérgica). Nas horas livres, jogo MMO RPG, assisto a animes e leio livros de fantasia.</p>
+    </section>
 
-                    <div class="descricao">
-                        <p>Oi! meu nome é Nicoly Serra, seja bem-vindo(a)!</p>
+    <section id="projetos" aria-labelledby="t-projetos">
+      <h2 id="t-projetos">Projetos</h2>
+      <ul class="projetos">
+        <li>
+          <h3>Mini Portfólio</h3>
+          <p>Este site. Nasceu como meu primeiro projeto de front-end e foi reescrito com HTML semântico, CSS moderno, responsividade e acessibilidade.</p>
+          <p class="tags">HTML · CSS</p>
+          <a href="https://github.com/NicolySerra/mini-portifolio">Ver código<span class="sr"> do Mini Portfólio</span></a>
+        </li>
+        <li>
+          <h3>CoffeeShop Network</h3>
+          <p>Implementação e segmentação de uma rede corporativa para uma cafeteria, simulada no Cisco Packet Tracer.</p>
+          <p class="tags">Redes · Cisco Packet Tracer</p>
+          <a href="https://github.com/NicolySerra/-CoffeeShop-Network">Ver código<span class="sr"> do CoffeeShop Network</span></a>
+        </li>
+        <!-- Copie um bloco <li> acima para adicionar novos projetos. -->
+      </ul>
+    </section>
 
-                        <p>
-                            Sou uma pessoa <span>curiosa, determinada e movida por desafios.</span> Gosto de aprender coisas novas, explorar diferentes áreas da tecnologia e entender como as coisas funcionam por trás delas. Valorizo responsabilidade, respeito, colaboração e a oportunidade de crescer através das experiências que encontro pelo caminho. Tenho um perfil bastante focado em evolução: gosto de estabelecer objetivos, buscar conhecimento e sair da minha zona de conforto
-                            Fora da vida profissional, também tenho grande interesse por cultura,  gatos, animes, livros de fantasia, universo geek e criatividade, elementos que refletem meu lado explorador e minha vontade constante de conhecer algo novo. 
-                        </p>
-                    </div>
-                </div>
+    <section id="evolucao" aria-labelledby="t-evolucao">
+      <h2 id="t-evolucao">Minha evolução</h2>
+      <p>Este portfólio é um registro de aprendizado. A primeira versão foi feita quando eu estava começando em front-end, e mantenho ela no ar para mostrar de onde vim. A versão atual aplica o que aprendi depois: semântica, acessibilidade e layout responsivo.</p>
+      <ul class="linha-tempo">
+        <li><strong>v1</strong> Primeira versão, meu primeiro contato com HTML e CSS. <a href="v1/index.html">Ver versão original</a></li>
+        <li><strong>v2</strong> Reescrita com boas práticas de HTML, CSS e acessibilidade.</li>
+      </ul>
+    </section>
 
-                <div class="informacao" id="informacao-minhas-redes">
-                    <h3 class="sub-titulo">Minhas redes</h3>
+    <section id="contato" aria-labelledby="t-contato">
+      <h2 id="t-contato">Contato</h2>
+      <ul class="links">
+        <li><a href="https://www.linkedin.com/in/nicoly-serra-10bb75252/" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/NicolySerra" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.instagram.com/nicolyserra/" rel="noopener">Instagram</a></li>
+        <li><a href="https://docs.google.com/document/d/1fxNog0BrWcjkpFLrOw0cCKIW1YksVMfA/edit" rel="noopener">Currículo</a></li>
+      </ul>
+    </section>
+  </main>
 
-                    <ul class="redes-sociais">
-                        <li>
-                            <a href="https://www.instagram.com/nicolyserra/" target="_blank" class="curriculo">Instagram</a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/nicoly-serra-10bb75252/" target="_blank" class="linkedin">LinkedIn</a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/NicolySerra" target="_blank" class="github">GitHub</a>
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-    </main>
-    <footer>
+  <footer>
     <p>© 2026 Nicoly Serra. Feito à mão com HTML e CSS.</p>
-    </footer>
-    <script src="./src/js/index.js"></script>
+  </footer>
 </body>
-
 </html>
